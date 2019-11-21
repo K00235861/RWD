@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+.topbarleft {
+	border: 1px solid black;
+	background: grey;
+	display: flex;
+	height: 100px;
+	flex:3;
+}
+.topbarmid {
+	border: 1px solid black;
+	background: grey;
+	display: flex;
+	height: 100px;
+	flex:4;
+}
+.topbarright {
+	border: 1px solid black;
+	background: grey;
+	display: flex;
+	height: 100px;
+	flex:3;
+}
+header > .topbarleft > div {
+	text-align: center;
+	font-size: 2em;
+	color: #ffeead;
+	flex: 1;
+	color: white;
+}
+header > .topbarleft > div:hover {
+	background-color: rgba(255, 153, 51, 0.8);
+}
+header > .topbarmid > div {
+	text-align: center;
+	font-size: 2em;
+	color: #ffeead;
+	flex: 1;
+	color: white;
+}
+header > .topbarmid > div img {
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+header > .topbarright > div {
+	text-align: center;
+	font-size: 2em;
+	color: #ffeead;
+	flex: 1;
+	color: white;
+}
+header > .topbarright > div:hover {
+	background-color: rgba(255, 153, 51, 0.8);
+}
+#main {
+	display: flex;
+	flex: 1;
+}
+#main > article {
+	flex: 85;
+}
+#main > nav {
+	flex: 15;
+}
+
+
+.advert > .add1 img {
+	width: 100%;
+	border:  1px solid #CCC;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: white;
+}
+.advert > .add2 img {
+	width: 100%;
+	border:  1px solid #CCC;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: white;
+}
+.advert > .add3 img {
+	width: 100%;
+	border:  1px solid #CCC;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: white;
+}
+.advert {
+	max-width: 200px;
+	min-width: 150px;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+
+
+.articles > .figMain > .mainImg img {
+	width: 50%;
+	margin-left:auto;
+	margin-right:auto;
+	max-height: 400px;
+	max-width: 300px;
+	display: flex;
+}
+.articles > .figSub > .sideImg img {
+	width: 100%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	max-height: 400px;
+	max-width: 300px;
+	display: flex;
+}
+.articles > .figSubLast > .sideImg img {
+	width: 100%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	max-height: 400px;
+	max-width: 300px;
+	display: flex;
+}
+.articles > .figMain {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	color: white;
+	margin: 0 0 50px 0;
+	padding: 10px;
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.articles > .figSub {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	color: white;
+	margin: 50px auto 50px auto;
+	padding: 10px;
+	text-align: center;
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+}
+.articles > .figSubLast {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	color: white;
+	margin: 50px auto 50px auto;
+	padding: 10px;
+	text-align: center;
+	width: 30%;
+	float: left;
+}
+.articles {
+	background-image:url(../images/backgroundImg.jpg)
+}
+
+
+footer > .contact > .c1 img {
+	width: 70px;
+	height:70px;
+	float: left;
+	display: flex;
+}
+.contact {
+	border: 1px solid black;
+	background: grey;
+	display: flex;
+	height: 100px;
+	flex:1;
+}
+.about {
+	border: 1px solid black;
+	background: grey;
+	display: flex;
+	height: 100px;
+	flex:1;
+}
+footer > .contact > div {
+	text-align: center;
+	font-size: 2em;
+	color: #ffeead;
+	flex: 1;
+	color: white;
+}
+footer > .about > div {
+	text-align: center;
+	font-size: 2em;
+	color: #ffeead;
+	flex: 1;
+	color: white;
+}
+.contact > div:nth-child(1) {
+  color: black;	
+}
+.about > div:nth-child(1) {
+  color: black;	
+}
+footer {
+	background: grey;
+	height: 100px;
+	display: flex;
+}
+
+
+a:link, a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+
+html, body {
+	  background-color: #ffeead;
+}
+#main > nav {
+  order: -1;
+  background: rgb(255, 180, 60);
+}
+header {
+	background: grey;
+	height: 100px;
+	display: flex;
+}
+article, nav {
+  padding: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+footer {
+	display: block;
+}	
+header {
+	display: block;
+	height: 250px;
+}
+.topbarleft {
+	height: 75px;
+}
+.topbarright {
+	height: 75px;
+}
+.articles > .figMain{
+	width: 300px;
+}
+.articles > .figSub {
+	width: 250px;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+.articles > .figSubLast {
+	width: 250px;
+	float: none;
+}
+}
