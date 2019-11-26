@@ -6,7 +6,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
-  color: green;
 }
 .topbarleft {
 	border: 1px solid black;
